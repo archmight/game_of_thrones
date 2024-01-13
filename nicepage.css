@@ -3167,6 +3167,7 @@ html {
 body {
   height: auto;
   min-height: 100%;
+  overflow-y: clip;
 }
 body,
 aside,
@@ -18306,9 +18307,6 @@ p {
 }
 .u-font-roboto-condensed.u-custom-font {
   font-family: 'Roboto Condensed', sans-serif !important;
-}
-.u-font-source-sans-pro.u-custom-font {
-  font-family: 'Source Sans Pro', sans-serif !important;
 }
 .u-font-oswald.u-custom-font {
   font-family: Oswald, sans-serif !important;
@@ -42251,11 +42249,36 @@ a.u-link.u-text-hover-grey-90:hover {
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         --theme-sheet-width-xl: 1140px;
         --theme-sheet-width-lg: 940px;
         --theme-sheet-width-md: 720px;
         --theme-sheet-width-sm: 540px;
         --theme-sheet-width-xs: 340px;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -42273,7 +42296,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h1.u-title
         {
         font-weight: 400;
-        font-size: 4.5rem;
+        font-size: 6rem;
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -42281,7 +42304,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h2.u-subtitle
         {
         font-weight: 400;
-        font-size: 2.25rem;
+        font-size: 3rem;
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -42289,7 +42312,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h1:not(.u-title)
         {
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 4.5rem;
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -42297,7 +42320,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h2:not(.u-subtitle)
         {
         font-weight: 400;
-        font-size: 2.25rem;
+        font-size: 3rem;
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -42305,7 +42328,7 @@ a.u-link.u-text-hover-grey-90:hover {
         h3
         {
         font-weight: 400;
-        font-size: 1.875rem;
+        font-size: 2.25rem;
         line-height: 1.2;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -42336,7 +42359,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         p.u-large-text
         {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin-top: 20px;
         margin-bottom: 20px;
         }
@@ -42348,8 +42371,15 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         p:not(.u-text-variant)
         {
+        font-size: 1.125rem;
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 1.6;
+        }
+        a
+        {
+        font-size: 1.125rem;
+        line-height: 1.6;
         }
         .u-btn
         {
@@ -42358,31 +42388,40 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         blockquote
         {
+        font-size: 1.125rem;
         font-style: italic;
         padding-left: 20px;
         border-width: 4px;
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 1.6;
         }
         .u-metadata
         {
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 1.6;
         }
         ul:not(.u-unstyled)
         {
+        font-size: 1.125rem;
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 1.6;
         }
         ol
         {
+        font-size: 1.125rem;
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 1.6;
         }
         .u-post-content
         {
+        font-size: 1.125rem;
         margin-top: 20px;
         margin-bottom: 20px;
+        line-height: 1.6;
         }
         .u-input
         {
@@ -42393,6 +42432,12 @@ a.u-link.u-text-hover-grey-90:hover {
 
         /** publish-rules **/
         /*begin-media rules*/
+        @media (max-width: 1199px) {
+        h1.u-title
+        {
+        font-size: 4.5rem;
+        }
+        }
         @media (max-width: 767px) {
         h1.u-title
         {
@@ -42405,28 +42450,94 @@ a.u-link.u-text-hover-grey-90:hover {
         font-size: 3rem;
         }
         }
+        @media (max-width: 767px) {
+        h2.u-subtitle
+        {
+        font-size: 2.25rem;
+        }
+        }
         @media (max-width: 575px) {
         h2.u-subtitle
         {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
+        }
+        }
+        @media (max-width: 1199px) {
+        h1:not(.u-title)
+        {
+        font-size: 3.75rem;
+        }
+        }
+        @media (max-width: 767px) {
+        h1:not(.u-title)
+        {
+        font-size: 3rem;
         }
         }
         @media (max-width: 575px) {
         h1:not(.u-title)
         {
-        font-size: 1.875rem;
+        font-size: 2.25rem;
+        }
+        }
+        @media (max-width: 767px) {
+        h2:not(.u-subtitle)
+        {
+        font-size: 2.25rem;
         }
         }
         @media (max-width: 575px) {
         h2:not(.u-subtitle)
         {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
+        }
+        }
+        @media (max-width: 767px) {
+        h3
+        {
+        font-size: 1.875rem;
         }
         }
         @media (max-width: 575px) {
         h3
         {
         font-size: 1.5rem;
+        }
+        }
+        @media (max-width: 767px) {
+        p:not(.u-text-variant)
+        {
+        font-size: 1rem;
+        }
+        }
+        @media (max-width: 767px) {
+        a
+        {
+        font-size: 1rem;
+        }
+        }
+        @media (max-width: 767px) {
+        blockquote
+        {
+        font-size: 1rem;
+        }
+        }
+        @media (max-width: 767px) {
+        ul:not(.u-unstyled)
+        {
+        font-size: 1rem;
+        }
+        }
+        @media (max-width: 767px) {
+        ol
+        {
+        font-size: 1rem;
+        }
+        }
+        @media (max-width: 767px) {
+        .u-post-content
+        {
+        font-size: 1rem;
         }
         }
         /*end-media rules*/
@@ -42436,6 +42547,14 @@ a.u-link.u-text-hover-grey-90:hover {
 
         /** cms-rules **/
         /*begin-responsive rules*/
+        .u-lg h1.u-title
+        {
+        font-size: 4.5rem;
+        }
+        .u-md h1.u-title
+        {
+        font-size: 4.5rem;
+        }
         .u-sm h1.u-title
         {
         font-size: 3.75rem;
@@ -42444,21 +42563,93 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         font-size: 3rem;
         }
-        .u-xs h2.u-subtitle
+        .u-sm h2.u-subtitle
         {
-        font-size: 1.5rem;
+        font-size: 2.25rem;
         }
-        .u-xs h1:not(.u-title)
+        .u-xs h2.u-subtitle
         {
         font-size: 1.875rem;
         }
+        .u-lg h1:not(.u-title)
+        {
+        font-size: 3.75rem;
+        }
+        .u-md h1:not(.u-title)
+        {
+        font-size: 3.75rem;
+        }
+        .u-sm h1:not(.u-title)
+        {
+        font-size: 3rem;
+        }
+        .u-xs h1:not(.u-title)
+        {
+        font-size: 2.25rem;
+        }
+        .u-sm h2:not(.u-subtitle)
+        {
+        font-size: 2.25rem;
+        }
         .u-xs h2:not(.u-subtitle)
         {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
+        }
+        .u-sm h3
+        {
+        font-size: 1.875rem;
         }
         .u-xs h3
         {
         font-size: 1.5rem;
+        }
+        .u-sm p:not(.u-text-variant)
+        {
+        font-size: 1rem;
+        }
+        .u-xs p:not(.u-text-variant)
+        {
+        font-size: 1rem;
+        }
+        .u-sm a
+        {
+        font-size: 1rem;
+        }
+        .u-xs a
+        {
+        font-size: 1rem;
+        }
+        .u-sm blockquote
+        {
+        font-size: 1rem;
+        }
+        .u-xs blockquote
+        {
+        font-size: 1rem;
+        }
+        .u-sm ul:not(.u-unstyled)
+        {
+        font-size: 1rem;
+        }
+        .u-xs ul:not(.u-unstyled)
+        {
+        font-size: 1rem;
+        }
+        .u-sm ol
+        {
+        font-size: 1rem;
+        }
+        .u-xs ol
+        {
+        font-size: 1rem;
+        }
+        .u-sm .u-post-content
+        {
+        font-size: 1rem;
+        }
+        .u-xs .u-post-content
+        {
+        font-size: 1rem;
         }
         /*end-responsive rules*/
         /** cms-rules **/
@@ -42562,7 +42753,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 80px;
+  min-height: 163px;
 }
 
 
@@ -42573,12 +42764,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-sheet-1 {
-  min-height: 120px;
-}
-
-.u-footer .u-text-1 {
-  width: 417px;
-  margin: 49px auto;
+  min-height: 165px;
 }
 @media (max-width: 1199px) {
   .u-footer .u-sheet-1 {
@@ -42598,10 +42784,6 @@ a.u-link.u-text-hover-grey-90:hover {
 @media (max-width: 575px) {
   .u-footer .u-sheet-1 {
     min-height: 36px;
-  }
-
-  .u-footer .u-text-1 {
-    width: 340px;
   }
 }
 
